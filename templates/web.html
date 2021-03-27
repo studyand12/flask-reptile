@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="{{ url_for('static',filename='mui.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='mui.css') }}"/>
+	</head>
+<body>
+
+{% for k in range(0,num) %}
+
+		<li class="mui-table-view-cell">
+				<a class="mui-navigate-right" href="{{txt1[k]}}">
+					 {{txt[k]}}
+				</a>
+			</li>
+{% endfor %}
+</body>
+</html>
